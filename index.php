@@ -8,12 +8,16 @@
     -------------------------------------------*/
     //test de la valeur $path dans l'URL et import de la ressource
     switch($path){
+        //route /routing/route -> ./route.php
         case $path === "/routing/route":
             include './route.php';
+        //route /routing/test -> ./test.php
         case $path === "/routing/test" : 
             include './test.php';
+        //route /routing/toto2 -> ./toto2.php
         case $path === "/routing/toto2":
             include './toto2.php';
+        //route /routing/addArticle -> ./controler/controler_article.php
         case $path === "/routing/addArticle":
             include './controler/controler_article.php';
     }
